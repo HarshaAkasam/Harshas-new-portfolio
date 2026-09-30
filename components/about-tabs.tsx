@@ -1,0 +1,4 @@
+'use client';
+import {useEffect,useState} from 'react';
+import {Tabs,TabsList,TabsTrigger,TabsContent} from '@/components/ui/tabs';
+export function AboutTabs({panels}:{panels:Record<string,React.ReactNode>}){const [tab,setTab]=useState('achievements');useEffect(()=>{const sync=()=>{const key=location.hash.slice(1);if(key in panels)setTab(key)};sync();window.addEventListener('hashchange',sync);return()=>window.removeEventListener('hashchange',sync)},[]);return <Tabs value={tab} onValueChange={setTab} className="about-tabbed"><TabsList className="about-tabs">{Object.keys(panels).map(key=><TabsTrigger key={key} value={key}>{key[0].toUpperCase()+key.slice(1)}</TabsTrigger>)}</TabsList>{Object.entries(panels).map(([key,panel])=><TabsContent id={key} key={key} value={key}>{panel}</TabsContent>)}</Tabs>}

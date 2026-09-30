@@ -1,0 +1,4 @@
+import {BookOpen,ArrowUpRight} from 'lucide-react';
+import {books} from '@/lib/editorial';
+import {SectionTitle} from '@/components/portfolio-ui';
+export function BooksLearning(){return <section className="section books-learning" id="learning"><SectionTitle label="KEEP LEARNING" title="Books & Learning"/><div className="book-status"><BookOpen size={25}/><div><h3>Books I’ve Read</h3><p>My completed reading list will appear here when it is added.</p></div></div><h3 className="books-heading">Books I Suggest</h3><div className="reading-list">{books.map((b,i)=><a key={b.title} href={b.url} target="_blank" rel="noopener noreferrer"><span className="reading-number">0{i+1}</span><div><span className="meta">{b.topic}</span><h3>{b.title}</h3><p>{b.author}</p><p>{b.description}</p></div><ArrowUpRight size={20}/></a>)}</div></section>}

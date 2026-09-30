@@ -1,0 +1,66 @@
+{
+  "leetcode": {
+    "platform": "leetcode",
+    "label": "Problems solved",
+    "value": 200,
+    "status": "cached",
+    "checkedAt": "2026-09-09T10:51:11.316753+00:00",
+    "details": [
+      {
+        "label": "Easy",
+        "value": 76
+      },
+      {
+        "label": "Medium",
+        "value": 97
+      },
+      {
+        "label": "Hard",
+        "value": 27
+      }
+    ],
+    "activity": {}
+  },
+  "codechef": {
+    "platform": "codechef",
+    "label": "Problems solved",
+    "value": 234,
+    "status": "cached",
+    "checkedAt": "2026-09-09T10:51:11.316753+00:00",
+    "details": []
+  },
+  "hackerrank": {
+    "platform": "hackerrank",
+    "label": "Practice points",
+    "value": 1554.0,
+    "status": "cached",
+    "checkedAt": "2026-09-09T10:51:11.316753+00:00",
+    "details": [
+      {
+        "label": "Algorithms points",
+        "value": 211.0
+      },
+      {
+        "label": "Python points",
+        "value": 405.0
+      },
+      {
+        "label": "C++ points",
+        "value": 20.0
+      },
+      {
+        "label": "Java points",
+        "value": 68.0
+      },
+      {
+        "label": "Tutorials points",
+        "value": 230.0
+      },
+      {
+        "label": "C points",
+        "value": 620.0
+      }
+    ],
+    "note": "HackerRank exposes practice scores here, not a verified solved-problem count."
+  }
+}

@@ -1,0 +1,2 @@
+import {getPlatformStat} from '@/lib/coding-stats';
+export async function GET(request:Request){const platform=new URL(request.url).searchParams.get('platform')||'';if(!['leetcode','codechef','github','hackerrank','geeksforgeeks'].includes(platform))return Response.json({error:'Unknown platform'},{status:400});return Response.json(await getPlatformStat(platform),{headers:{'Cache-Control':'no-store'}});}
