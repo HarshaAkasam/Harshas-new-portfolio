@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import './sage-design.css';
+import './mobile-refinements.css';
 import {SiteShell} from '@/components/site-shell';
 import {personal} from '@/lib/portfolio';
 export const metadata:Metadata={title:'Harsha Akasam — Software Developer',description:'Explore Harsha Akasam’s work in full-stack development, React Native mobile applications, and AI / ML. Projects, blogs, skills, books and learning, coding journey, and Jarvis.',openGraph:{title:'Harsha Akasam — Software Developer',description:'Web, mobile, and intelligent systems. Explore the work of Harsha Akasam.',type:'website'},icons:{icon:'/favicon.svg'}};
